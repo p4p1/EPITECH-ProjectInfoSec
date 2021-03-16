@@ -1,0 +1,60 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 19:38 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+Initiating Ping Scan at 19:38
+Scanning 10.10.11.6 [2 ports]
+Completed Ping Scan at 19:38, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:38
+Completed Parallel DNS resolution of 1 host. at 19:38, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 19:38
+Scanning 10.10.11.6 [65535 ports]
+Discovered open port 80/tcp on 10.10.11.6
+Completed Connect Scan at 19:38, 8.75s elapsed (65535 total ports)
+Initiating Service scan at 19:38
+Scanning 1 service on 10.10.11.6
+Completed Service scan at 19:38, 6.04s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.11.6.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.38s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.03s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+Nmap scan report for 10.10.11.6
+Host is up, received syn-ack (0.014s latency).
+Scanned at 2021-03-16 19:38:30 CET for 16s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Node.js Express framework
+|_http-cors: HEAD GET POST PUT DELETE PATCH
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Thermostat 007 - Control Panel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:38
+Completed NSE at 19:38, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.94 seconds
