@@ -23,3 +23,6 @@ The company is called powerzio
 
 ## Usefull links
 https://mosquitto.org/
+
+## Found CVE
+CVE:CVE-2011-2523

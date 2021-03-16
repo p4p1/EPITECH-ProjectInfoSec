@@ -1,0 +1,60 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 20:10 CET
+NSE: Loaded 105 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:10
+Completed NSE at 20:10, 10.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:10
+Completed NSE at 20:10, 0.00s elapsed
+Initiating Ping Scan at 20:10
+Scanning 10.10.11.102 [2 ports]
+Completed Ping Scan at 20:10, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:10
+Completed Parallel DNS resolution of 1 host. at 20:10, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 20:10
+Scanning 10.10.11.102 [1 port]
+Discovered open port 21/tcp on 10.10.11.102
+Completed Connect Scan at 20:10, 0.00s elapsed (1 total ports)
+NSE: Script scanning 10.10.11.102.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:10
+NSE: [tls-ticketbleed 10.10.11.102:21] Not running due to lack of privileges.
+NSE: [firewall-bypass 10.10.11.102] lacks privileges.
+Completed NSE at 20:10, 1.03s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:10
+Completed NSE at 20:10, 0.00s elapsed
+Nmap scan report for 10.10.11.102
+Host is up, received conn-refused (0.0050s latency).
+Scanned at 2021-03-16 20:10:55 CET for 1s
+
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack
+| ftp-vsftpd-backdoor: 
+|   VULNERABLE:
+|   vsFTPd version 2.3.4 backdoor
+|     State: VULNERABLE (Exploitable)
+|     IDs:  BID:48539  CVE:CVE-2011-2523
+|       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
+|     Disclosure date: 2011-07-03
+|     Exploit results:
+|       Shell command: id
+|       Results: uid=0(root) gid=0(root) groups=0(root)
+|     References:
+|       https://www.securityfocus.com/bid/48539
+|       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
+|       https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
+|_sslv2-drown: 
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 20:10
+Completed NSE at 20:10, 0.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 20:10
+Completed NSE at 20:10, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 11.36 seconds

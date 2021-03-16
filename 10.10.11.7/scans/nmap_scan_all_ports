@@ -1,0 +1,102 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 19:47 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+Initiating Ping Scan at 19:47
+Scanning 10.10.11.7 [2 ports]
+Completed Ping Scan at 19:47, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:47
+Completed Parallel DNS resolution of 1 host. at 19:47, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 19:47
+Scanning 10.10.11.7 [65535 ports]
+Discovered open port 1883/tcp on 10.10.11.7
+Completed Connect Scan at 19:47, 6.81s elapsed (65535 total ports)
+Initiating Service scan at 19:47
+Scanning 1 service on 10.10.11.7
+Completed Service scan at 19:47, 6.01s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.11.7.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 5.76s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+Nmap scan report for 10.10.11.7
+Host is up, received conn-refused (0.037s latency).
+Scanned at 2021-03-16 19:47:06 CET for 19s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT     STATE SERVICE                 REASON  VERSION
+1883/tcp open  mosquitto version 2.0.9 syn-ack
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/messages/sent: 194
+|     $SYS/broker/uptime: 3520 seconds
+|     $SYS/broker/load/sockets/1min: 2.74
+|     $SYS/broker/load/bytes/sent/15min: 88.79
+|     $SYS/broker/publish/messages/sent: 185
+|     $SYS/broker/clients/total: 4
+|     $SYS/broker/load/sockets/5min: 0.60
+|     $SYS/broker/clients/maximum: 4
+|     $SYS/broker/load/bytes/sent/5min: 193.34
+|     $SYS/broker/load/sockets/15min: 0.25
+|     $SYS/broker/load/connections/15min: 0.17
+|     $SYS/broker/bytes/sent: 7610
+|     $SYS/broker/load/publish/received/15min: 25.07
+|     tempReading: 265
+|     $SYS/broker/store/messages/count: 34
+|     $SYS/broker/subscriptions/count: 7
+|     $SYS/broker/clients/connected: 2
+|     $SYS/broker/version: mosquitto version 2.0.9
+|     $SYS/broker/publish/bytes/sent: 856
+|     $SYS/broker/bytes/received: 26862
+|     $SYS/broker/load/messages/sent/5min: 5.22
+|     $SYS/broker/store/messages/bytes: 175
+|     $SYS/broker/retained messages/count: 38
+|     $SYS/broker/publish/messages/received: 1478
+|     $SYS/broker/load/publish/received/5min: 25.92
+|     $SYS/broker/load/messages/received/5min: 26.52
+|     $SYS/broker/publish/bytes/received: 4441
+|     $SYS/broker/messages/stored: 34
+|     $SYS/broker/messages/received: 1491
+|     $SYS/broker/clients/active: 2
+|     $SYS/broker/load/messages/sent/1min: 23.76
+|     $SYS/broker/load/publish/sent/5min: 4.62
+|     $SYS/broker/load/connections/5min: 0.40
+|     $SYS/broker/load/messages/received/15min: 25.35
+|     $SYS/broker/load/publish/sent/1min: 21.01
+|     $SYS/broker/load/publish/received/1min: 26.82
+|     $SYS/broker/load/messages/received/1min: 29.56
+|     $SYS/broker/load/bytes/received/15min: 457.20
+|     $SYS/broker/load/bytes/sent/1min: 882.62
+|     $SYS/broker/load/publish/sent/15min: 2.21
+|     $SYS/broker/load/bytes/received/1min: 545.72
+|     $SYS/broker/load/connections/1min: 1.83
+|     $SYS/broker/load/messages/sent/15min: 2.51
+|_    $SYS/broker/load/bytes/received/5min: 480.31
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:47
+Completed NSE at 19:47, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.02 seconds

@@ -1,0 +1,64 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 19:49 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+Initiating Ping Scan at 19:49
+Scanning 10.10.11.22 [2 ports]
+Completed Ping Scan at 19:49, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:49
+Completed Parallel DNS resolution of 1 host. at 19:49, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 19:49
+Scanning 10.10.11.22 [65535 ports]
+Discovered open port 80/tcp on 10.10.11.22
+Completed Connect Scan at 19:49, 6.45s elapsed (65535 total ports)
+Initiating Service scan at 19:49
+Scanning 1 service on 10.10.11.22
+Completed Service scan at 19:49, 6.10s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.11.22.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 1.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.07s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+Nmap scan report for 10.10.11.22
+Host is up, received syn-ack (0.023s latency).
+Scanned at 2021-03-16 19:49:10 CET for 14s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+|_http-favicon: Unknown favicon MD5: 69286EE0F68B291945F235083FC6E301
+|_http-generator: WordPress 5.2.9
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Powerzio&#039;s Blog &#8211; Internal News and Updates
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:49
+Completed NSE at 19:49, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 14.00 seconds

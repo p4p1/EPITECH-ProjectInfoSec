@@ -1,0 +1,39 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.11.22
++ Target Hostname:    10.10.11.22
++ Target Port:        80
++ Start Time:         2021-03-16 19:50:37 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.38 (Debian)
++ Retrieved x-powered-by header: PHP/7.3.11
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'link' found, with contents: <http://10.10.11.22/index.php/wp-json/>; rel="https://api.w.org/"
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Uncommon header 'x-redirect-by' found, with contents: WordPress
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Entry '/wp-admin/' in robots.txt returned a non-forbidden or redirect HTTP code (302)
++ "robots.txt" contains 2 entries which should be manually viewed.
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ Server leaks inodes via ETags, header found with file /icons/README, fields: 0x13f4 0x438c034968a80 
++ OSVDB-3233: /icons/README: Apache default file found.
++ /wp-links-opml.php: This WordPress script reveals the installed version.
++ OSVDB-3092: /license.txt: License file found may identify site software.
++ /wp-app.log: Wordpress' wp-app.log may leak application/system details.
++ /wordpress/: A Wordpress installation was found.
++ Cookie wordpress_test_cookie created without the httponly flag
++ /wp-admin/wp-login.php: Wordpress login found
++ /blog/wp-login.php: Wordpress login found
++ /wp-login.php: Wordpress login found
++ 7521 requests: 0 error(s) and 19 item(s) reported on remote host
++ End Time:           2021-03-16 19:54:17 (GMT1) (220 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+      *********************************************************************
+      Portions of the server's headers (Apache/2.4.38) are not in
+      the Nikto database or are newer than the known string. Would you like
+      to submit this information (*no server specific data*) to CIRT.net
+      for a Nikto update (or you may email to sullo@cirt.net) (y/n)? 

@@ -1,0 +1,81 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 20:08 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Initiating Ping Scan at 20:08
+Scanning 10.10.11.102 [2 ports]
+Completed Ping Scan at 20:08, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:08
+Completed Parallel DNS resolution of 1 host. at 20:08, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 20:08
+Scanning 10.10.11.102 [65535 ports]
+Discovered open port 21/tcp on 10.10.11.102
+Discovered open port 22/tcp on 10.10.11.102
+Completed Connect Scan at 20:08, 6.90s elapsed (65535 total ports)
+Initiating Service scan at 20:08
+Scanning 2 services on 10.10.11.102
+Completed Service scan at 20:08, 0.02s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.11.102.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:08
+NSE: [ftp-bounce 10.10.11.102:21] PORT response: 500 Illegal PORT command.
+Completed NSE at 20:08, 0.34s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.04s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Nmap scan report for 10.10.11.102
+Host is up, received conn-refused (0.026s latency).
+Scanned at 2021-03-16 20:08:41 CET for 7s
+Not shown: 65533 closed ports
+Reason: 65533 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.10.11.1
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 5
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 0f:3c:ce:13:01:2c:b6:35:ef:c2:01:3f:d3:08:04:ce (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrtHff8ENZ/n72qS9FAxUQsU5Xuy9FKHUL5pzjO8+a+MZaJBEZc6EKiiIaocehKh7Iq6jyC2Igj9a9WcNaTXxHPwNa8UMS+2A/Yv+TLTRevy0a5G7tEXdjjh8qG81Mi8jMG6K2vTuXam40OeOf81UF9kggmKVJIjFH39I91JwiG/lINq7CIgJzRZgPQAWDUESUDEGKwN6PnBlNHLlZUZuS0k4C1yhu+LDi/vGZeeQiQ6egwq1a+1jw1UhcbTUHbNRY6nLWLWZ6GFrtIWVBUJZLeT2zFS8/CwnoZOwv3SL0liFCo0khO0on20NcbmzBzalrdlKO+TpOmmQjrNvIw3TL
+|   256 55:7e:f5:70:c6:ee:06:b3:de:a5:2d:96:6c:27:03:89 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKMbSWVt6TcGFpn7eLRgEkdp5m1/u5L5JFyY5vko2Ci2gBYBw2mop4OEwPQoyyRfBq4G6dhm5Vz4PDE3iEPV2XU=
+|   256 9c:f5:30:e2:34:67:2a:96:c3:5d:7c:24:85:d2:ed:e3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKwdoxLRkCtkd+1kFO8qKLvk9tUE1Q0s+q+kMa2CSyIp
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:08
+Completed NSE at 20:08, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.71 seconds

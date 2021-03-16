@@ -1,0 +1,49 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 20:18 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+Initiating Ping Scan at 20:18
+Scanning 10.10.11.222 [2 ports]
+Completed Ping Scan at 20:18, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:18
+Completed Parallel DNS resolution of 1 host. at 20:18, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 20:18
+Scanning 10.10.11.222 [65535 ports]
+Completed Connect Scan at 20:18, 6.90s elapsed (65535 total ports)
+Initiating Service scan at 20:18
+NSE: Script scanning 10.10.11.222.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+Nmap scan report for 10.10.11.222
+Host is up, received conn-refused (0.024s latency).
+All 65535 scanned ports on 10.10.11.222 are closed because of 65535 conn-refused
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:18
+Completed NSE at 20:18, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.27 seconds
