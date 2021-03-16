@@ -1,0 +1,64 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 17:12 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:12
+Completed NSE at 17:12, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:12
+Completed NSE at 17:12, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:12
+Completed NSE at 17:12, 0.00s elapsed
+Initiating Ping Scan at 17:12
+Scanning 10.0.0.100 [2 ports]
+Completed Ping Scan at 17:12, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:12
+Completed Parallel DNS resolution of 1 host. at 17:12, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 17:12
+Scanning 10.0.0.100 [65535 ports]
+Discovered open port 22/tcp on 10.0.0.100
+Completed Connect Scan at 17:13, 34.34s elapsed (65535 total ports)
+Initiating Service scan at 17:13
+Scanning 1 service on 10.0.0.100
+Completed Service scan at 17:13, 0.12s elapsed (1 service on 1 host)
+NSE: Script scanning 10.0.0.100.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 1.03s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 0.00s elapsed
+Nmap scan report for 10.0.0.100
+Host is up, received conn-refused (0.065s latency).
+Scanned at 2021-03-16 17:12:49 CET for 36s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.3p1 Ubuntu 1ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 da:03:bf:18:f5:76:92:98:01:0f:3c:d4:89:66:7b:e0 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIRGR2321hhmC7MDCKt6wphD2P5EWZa6C4GVMbPYIfUMhuelakzgBp67irI2xy43ibLvqYyftozSRYDPZbmPZ6rChnXIS4aR1vECvEcuZCI7gR7auMCptkFw0bykCJoBFPrlp3zWeWNUNQ7RrelvD7uzL0CxzV3fE5AForKlL9EppfaVlIHJUUQoIJMr0jhVEBtVcW42XvbIQMvWViYWeo8PS6sEgCzCQFsSjI4unG4sVJeFMipsXWDkxc4pLifvLrd+o9X0xLIvO/zmz57uDKxqMfsNRTojOy6v4j2iIJLBqQGFF5tbI2M3zB1YExRntyrzGP7STFHHjm2CBFQX7dd5XIBkuAj8b7zGucUupOe9J3IffrOWrto9KOwX2V4xS1QHNt0XkpKPUg4o8dTbwSfSoIDSwCNsL84XQIXGW+q8XGVfI/n9uCtWtRt8IBszh4aFI+hyWQUhiWWFAmiH2IIDXLfTFE+lQNgBY9yR5Y1cpzU21Ct1oBp2bSVNy+DYU=
+|   256 dc:50:84:1b:2e:7e:9d:c3:89:f4:0b:59:34:06:8c:c4 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOzp4ZeHpcgyt5q1mvPs4P5JcgEdSX8ZLPUEbWdudh9P/5MJPl6bsYukUreXZuyOMjtE9E0dGqNjZfwfRSVULBc=
+|   256 ef:19:6e:2f:0b:5b:58:01:2f:ed:93:da:44:c7:53:4c (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP0qtS9vqIFBKIXqKEf5vTWGrXGhSA5k+O89TAd21TMm
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:13
+Completed NSE at 17:13, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 36.00 seconds

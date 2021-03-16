@@ -1,0 +1,26 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 17:33 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:33
+Completed NSE at 17:33, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:33
+Completed NSE at 17:33, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:33
+Completed NSE at 17:33, 0.00s elapsed
+Initiating Ping Scan at 17:33
+Scanning 127.0.0.1 [2 ports]
+Completed Ping Scan at 17:33, 0.03s elapsed (1 total hosts)
+Initiating Connect Scan at 17:33
+Scanning localhost (127.0.0.1) [65535 ports]
+Discovered open port 80/tcp on 127.0.0.1
+Discovered open port 22/tcp on 127.0.0.1
+Discovered open port 3306/tcp on 127.0.0.1
+Connect Scan Timing: About 1.04% done; ETC: 18:23 (0:49:04 remaining)
+Connect Scan Timing: About 2.79% done; ETC: 18:09 (0:35:28 remaining)
+Connect Scan Timing: About 4.53% done; ETC: 18:06 (0:31:57 remaining)
+Connect Scan Timing: About 6.83% done; ETC: 18:05 (0:30:14 remaining)
+Connect Scan Timing: About 9.41% done; ETC: 18:04 (0:28:34 remaining)
+Connect Scan Timing: About 10.25% done; ETC: 18:09 (0:32:24 remaining)
