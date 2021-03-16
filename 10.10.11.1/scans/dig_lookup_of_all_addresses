@@ -1,0 +1,172 @@
+
+; <<>> DiG 9.16.12 <<>> @10.10.11.1 -x 10.10.11.1 10.10.11.4 10.10.11.6 10.10.11.7 10.10.11.22 10.10.11.88 10.10.11.97 10.10.11.102 10.10.11.111 10.10.11.123 10.10.11.143 10.10.11.222
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 22996
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;1.11.10.10.in-addr.arpa.	IN	PTR
+
+;; Query time: 6 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 52
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 10524
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.4.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 39
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 21515
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.6.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 39
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 32540
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.7.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 39
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 31589
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.22.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 40
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 63527
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.88.			IN	A
+
+;; Query time: 6 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 40
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 10577
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.97.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 40
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 45129
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.102.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 41
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 17296
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.111.			IN	A
+
+;; Query time: 6 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 41
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 28224
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.123.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 41
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 28781
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.143.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 41
+
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 33624
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;10.10.11.222.			IN	A
+
+;; Query time: 3 msec
+;; SERVER: 10.10.11.1#53(10.10.11.1)
+;; WHEN: Tue Mar 16 19:24:34 CET 2021
+;; MSG SIZE  rcvd: 41
+

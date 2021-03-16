@@ -1,0 +1,74 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-16 19:03 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:03
+Completed NSE at 19:03, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:03
+Completed NSE at 19:03, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:03
+Completed NSE at 19:03, 0.00s elapsed
+Initiating Ping Scan at 19:03
+Scanning 10.10.11.1 [2 ports]
+Completed Ping Scan at 19:03, 0.00s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:03
+Completed Parallel DNS resolution of 1 host. at 19:03, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 19:03
+Scanning 10.10.11.1 [65535 ports]
+Discovered open port 53/tcp on 10.10.11.1
+Discovered open port 22/tcp on 10.10.11.1
+Discovered open port 80/tcp on 10.10.11.1
+Completed Connect Scan at 19:03, 6.85s elapsed (65535 total ports)
+Initiating Service scan at 19:03
+Scanning 3 services on 10.10.11.1
+Completed Service scan at 19:03, 6.01s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.11.1.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:03
+Completed NSE at 19:04, 8.08s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:04
+Completed NSE at 19:04, 0.02s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:04
+Completed NSE at 19:04, 0.00s elapsed
+Nmap scan report for 10.10.11.1
+Host is up, received syn-ack (0.025s latency).
+Scanned at 2021-03-16 19:03:45 CET for 21s
+Not shown: 65532 closed ports
+Reason: 65532 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.3p1 Ubuntu 1ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ca:70:4d:ec:21:34:75:22:7c:b7:27:bf:6e:a1:ad:37 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCBVMlTyf137AikRSA8Ot+yCXeZSZJuCAOyftAT8b25+KdLUFl52uCcsEq9wyICqAnA8i62j7UR3BJHF0BRqxZRWNvgmI8l8rNcm96dMI/PyTtSdAZT8bhE6UW3lrHuKQYr5ScnlScLVj0BBahaykIYB3o8gIwoj2EdzLRjKxRNCppai7VSd6rLD5LyiTPc3UPvFkzwnb5ZTpW+sMco9x8htfSmIj2hpMrKHVlCZBTkyIKo4SvU7uDEJ0sIehdRYTqo4u8/3rpWWQ+AA9mk4l3mM+sSv3Yv3Cbi3QnRKnrQoHgfYgxJPs5a/UzeR+RhL+OsGed8mru1VTB8cMqrn0U7L04oK4TobvCCBJQwCFeZCuuvtPOZDG7Smcepe7WCUtT1ibhoteGkYfM3Fnqgoi3z4gNVB2FvElhDVW6996C02hT7MHm4YG/hON96g1gQRqHqGBUebG+XeYZTo2VB53MAhuwAyQoYwEG2yn3RMnv0f8xx95UxSXouQjKexBjTD0=
+|   256 3c:4c:69:68:32:14:88:88:2f:c8:94:97:e5:b7:57:35 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBP69T+nLty4xoy9Yk/rRs6lh+eSsCYgWMC0ep5onE/vm0VhWTIsiC7h8IdVfkL3H5sSRjMRKL2KlikGojwT+NYc=
+|   256 e1:b0:f5:ab:48:a8:e5:5e:bf:86:13:1b:2c:4a:c0:40 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBn+6jjgWpoUWXAAzereFeXbuWkjwT+p/14B+zCPQuEb
+53/tcp open  domain  syn-ack dnsmasq 2.82
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.82
+80/tcp open  http    syn-ack nginx 1.18.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 19:04
+Completed NSE at 19:04, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 19:04
+Completed NSE at 19:04, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 19:04
+Completed NSE at 19:04, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.38 seconds
