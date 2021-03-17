@@ -1,0 +1,182 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.15
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.10.11.22/ [10.10.11.22]
+[32m[+][0m Started: Wed Mar 17 23:29:09 2021
+
+Interesting Finding(s):
+
+[32m[+][0m robots.txt found: http://10.10.11.22/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.10.11.22/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m WordPress readme found: http://10.10.11.22/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.10.11.22/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.2.9 identified (Latest, released on 2020-10-30).
+ | Found By: Atom Generator (Aggressive Detection)
+ |  - http://10.10.11.22/index.php/feed/atom/, <generator uri="https://wordpress.org/" version="5.2.9">WordPress</generator>
+ | Confirmed By: Style Etag (Aggressive Detection)
+ |  - http://10.10.11.22/wp-admin/load-styles.php, Match: '5.2.9'
+
+[34m[i][0m The main theme could not be detected.
+
+[32m[+][0m Enumerating All Plugins (via Aggressive Methods)
+
+ Checking Known Locations -: |============================================================================================================================================================|
+[32m[+][0m Checking Plugin Versions (via Passive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m akismet
+ | Location: http://10.10.11.22/wp-content/plugins/akismet/
+ | Latest Version: 4.1.9
+ | Last Updated: 2021-03-02T18:10:00.000Z
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://10.10.11.22/wp-content/plugins/akismet/, status: 403
+ |
+ | The version could not be determined.
+
+[32m[+][0m wp-file-manager
+ | Location: http://10.10.11.22/wp-content/plugins/wp-file-manager/
+ | Latest Version: 7.1
+ | Last Updated: 2021-02-18T07:13:00.000Z
+ | Readme: http://10.10.11.22/wp-content/plugins/wp-file-manager/readme.txt
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://10.10.11.22/wp-content/plugins/wp-file-manager/, status: 200
+ |
+ | The version could not be determined.
+
+[32m[+][0m Enumerating All Themes (via Aggressive Methods)
+
+ Checking Known Locations -: |============================================================================================================================================================|
+[32m[+][0m Checking Theme Versions (via Aggressive Methods)
+
+[34m[i][0m Theme(s) Identified:
+
+[32m[+][0m twentynineteen
+ | Location: http://10.10.11.22/wp-content/themes/twentynineteen/
+ | Latest Version: 2.0
+ | Last Updated: 2021-03-09T00:00:00.000Z
+ | Readme: http://10.10.11.22/wp-content/themes/twentynineteen/readme.txt
+ | Style URL: http://10.10.11.22/wp-content/themes/twentynineteen/style.css
+ | Style Name: Twenty Nineteen
+ | Style URI: https://wordpress.org/themes/twentynineteen/
+ | Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom sty...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://10.10.11.22/wp-content/themes/twentynineteen/, status: 500
+ |
+ | The version could not be determined.
+
+[32m[+][0m twentyseventeen
+ | Location: http://10.10.11.22/wp-content/themes/twentyseventeen/
+ | Latest Version: 2.6
+ | Last Updated: 2021-03-09T00:00:00.000Z
+ | Readme: http://10.10.11.22/wp-content/themes/twentyseventeen/README.txt
+ | Style URL: http://10.10.11.22/wp-content/themes/twentyseventeen/style.css
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://10.10.11.22/wp-content/themes/twentyseventeen/, status: 500
+ |
+ | The version could not be determined.
+
+[32m[+][0m twentysixteen
+ | Location: http://10.10.11.22/wp-content/themes/twentysixteen/
+ | Latest Version: 2.4
+ | Last Updated: 2021-03-09T00:00:00.000Z
+ | Readme: http://10.10.11.22/wp-content/themes/twentysixteen/readme.txt
+ | Style URL: http://10.10.11.22/wp-content/themes/twentysixteen/style.css
+ | Style Name: Twenty Sixteen
+ | Style URI: https://wordpress.org/themes/twentysixteen/
+ | Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead ...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://10.10.11.22/wp-content/themes/twentysixteen/, status: 500
+ |
+ | The version could not be determined.
+
+[32m[+][0m Enumerating Timthumbs (via Aggressive Methods)
+
+ Checking Known Locations -: |============================================================================================================================================================|
+
+[34m[i][0m No Timthumbs Found.
+
+[32m[+][0m Enumerating DB Exports (via Aggressive Methods)
+
+ Checking DB Exports -: |=================================================================================================================================================================|
+
+[34m[i][0m No DB Exports Found.
+
+[32m[+][0m Enumerating Medias (via Aggressive Methods) (Permalink setting must be set to "Plain" for those to be detected)
+
+ Brute Forcing Attachment IDs -: |========================================================================================================================================================|
+
+[34m[i][0m No Medias Found.
+
+[32m[+][0m Enumerating Users (via Aggressive Methods)
+
+ Brute Forcing Author IDs -: |============================================================================================================================================================|
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m fraser
+ | Found By: Wp Json Api (Aggressive Detection)
+ |  - http://10.10.11.22/index.php/wp-json/wp/v2/users/?per_page=100&page=1
+ | Confirmed By:
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Thu Mar 18 00:05:09 2021
+[32m[+][0m Requests Done: 117295
+[32m[+][0m Cached Requests: 7
+[32m[+][0m Data Sent: 33.63 MB
+[32m[+][0m Data Received: 37.191 MB
+[32m[+][0m Memory used: 467.719 MB
+[32m[+][0m Elapsed time: 00:36:00
