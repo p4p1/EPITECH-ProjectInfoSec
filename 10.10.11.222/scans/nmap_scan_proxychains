@@ -21,3 +21,133 @@ Scanning 10.10.11.222 [65535 ports]
 Connect Scan Timing: About 5.20% done; ETC: 01:28 (0:09:25 remaining)
 Connect Scan Timing: About 6.59% done; ETC: 01:37 (0:17:15 remaining)
 Connect Scan Timing: About 14.51% done; ETC: 01:30 (0:10:07 remaining)
+Connect Scan Timing: About 22.58% done; ETC: 01:28 (0:07:36 remaining)
+Discovered open port 23023/tcp on 10.10.11.222
+Connect Scan Timing: About 30.48% done; ETC: 01:27 (0:06:12 remaining)
+Connect Scan Timing: About 38.90% done; ETC: 01:27 (0:05:03 remaining)
+Connect Scan Timing: About 47.64% done; ETC: 01:26 (0:04:05 remaining)
+Connect Scan Timing: About 56.42% done; ETC: 01:26 (0:03:15 remaining)
+Connect Scan Timing: About 65.19% done; ETC: 01:26 (0:02:31 remaining)
+Connect Scan Timing: About 73.64% done; ETC: 01:25 (0:01:52 remaining)
+Connect Scan Timing: About 82.15% done; ETC: 01:25 (0:01:15 remaining)
+Connect Scan Timing: About 90.79% done; ETC: 01:25 (0:00:38 remaining)
+Completed Connect Scan at 01:25, 404.97s elapsed (65535 total ports)
+Initiating Service scan at 01:25
+Scanning 1 service on 10.10.11.222
+Completed Service scan at 01:25, 11.36s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.11.222.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.02s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.03s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.00s elapsed
+Nmap scan report for 10.10.11.222
+Host is up, received conn-refused (0.0055s latency).
+Scanned at 2021-03-17 01:18:47 CET for 416s
+Not shown: 65534 closed ports
+Reason: 65534 conn-refused
+PORT      STATE SERVICE REASON  VERSION
+23023/tcp open  unknown syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP: 
+|     HTTP/1.1 400 Illegal character CNTL=0x0
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x0</pre>
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Wed, 17 Mar 2021 00:25:43 GMT
+|     Server: Netwave IP Camera
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 69
+|     Netwave security camera
+|     <br/>
+|     href="videostream.cgi">Live feed</a>
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     Date: Wed, 17 Mar 2021 00:25:43 GMT
+|     Server: Netwave IP Camera
+|     Content-Length: 0
+|   Help: 
+|     HTTP/1.1 400 No URI
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 49
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: No URI</pre>
+|   RPCCheck: 
+|     HTTP/1.1 400 Illegal character OTEXT=0x80
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 71
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character OTEXT=0x80</pre>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Unknown Version
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 58
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Unknown Version</pre>
+|   SSLSessionReq: 
+|     HTTP/1.1 400 Illegal character CNTL=0x16
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 70
+|     Connection: close
+|     <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x16</pre>
+|   TerminalServerCookie: 
+|     HTTP/1.1 400 Illegal character CNTL=0x3
+|     Content-Type: text/html;charset=iso-8859-1
+|     Content-Length: 69
+|     Connection: close
+|_    <h1>Bad Message 400</h1><pre>reason: Illegal character CNTL=0x3</pre>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port23023-TCP:V=7.91%I=7%D=3/17%Time=60514C87%P=x86_64-unknown-linux-gn
+SF:u%r(GetRequest,D3,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2017\x20Mar
+SF:\x202021\x2000:25:43\x20GMT\r\nServer:\x20Netwave\x20IP\x20Camera\r\nCo
+SF:ntent-Type:\x20text/html;charset=utf-8\r\nContent-Length:\x2069\r\n\r\n
+SF:Netwave\x20security\x20camera\n<br/>\n<a\x20href=\"videostream\.cgi\">L
+SF:ive\x20feed</a>")%r(HTTPOptions,6D,"HTTP/1\.1\x20404\x20Not\x20Found\r\
+SF:nDate:\x20Wed,\x2017\x20Mar\x202021\x2000:25:43\x20GMT\r\nServer:\x20Ne
+SF:twave\x20IP\x20Camera\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,A
+SF:D,"HTTP/1\.1\x20400\x20Unknown\x20Version\r\nContent-Type:\x20text/html
+SF:;charset=iso-8859-1\r\nContent-Length:\x2058\r\nConnection:\x20close\r\
+SF:n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Unknown\x20Version</
+SF:pre>")%r(RPCCheck,C7,"HTTP/1\.1\x20400\x20Illegal\x20character\x20OTEXT
+SF:=0x80\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Lengt
+SF:h:\x2071\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><
+SF:pre>reason:\x20Illegal\x20character\x20OTEXT=0x80</pre>")%r(DNSVersionB
+SF:indReqTCP,C3,"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nC
+SF:ontent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r
+SF:\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason
+SF::\x20Illegal\x20character\x20CNTL=0x0</pre>")%r(DNSStatusRequestTCP,C3,
+SF:"HTTP/1\.1\x20400\x20Illegal\x20character\x20CNTL=0x0\r\nContent-Type:\
+SF:x20text/html;charset=iso-8859-1\r\nContent-Length:\x2069\r\nConnection:
+SF:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\
+SF:x20character\x20CNTL=0x0</pre>")%r(Help,9B,"HTTP/1\.1\x20400\x20No\x20U
+SF:RI\r\nContent-Type:\x20text/html;charset=iso-8859-1\r\nContent-Length:\
+SF:x2049\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Message\x20400</h1><pre
+SF:>reason:\x20No\x20URI</pre>")%r(SSLSessionReq,C5,"HTTP/1\.1\x20400\x20I
+SF:llegal\x20character\x20CNTL=0x16\r\nContent-Type:\x20text/html;charset=
+SF:iso-8859-1\r\nContent-Length:\x2070\r\nConnection:\x20close\r\n\r\n<h1>
+SF:Bad\x20Message\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=
+SF:0x16</pre>")%r(TerminalServerCookie,C3,"HTTP/1\.1\x20400\x20Illegal\x20
+SF:character\x20CNTL=0x3\r\nContent-Type:\x20text/html;charset=iso-8859-1\
+SF:r\nContent-Length:\x2069\r\nConnection:\x20close\r\n\r\n<h1>Bad\x20Mess
+SF:age\x20400</h1><pre>reason:\x20Illegal\x20character\x20CNTL=0x3</pre>");
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 01:25
+Completed NSE at 01:25, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 416.81 seconds
