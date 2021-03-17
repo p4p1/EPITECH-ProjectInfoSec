@@ -1,0 +1,81 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-03-17 02:14 CET
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 02:14
+Completed NSE at 02:14, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 02:14
+Completed NSE at 02:14, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 02:14
+Completed NSE at 02:14, 0.00s elapsed
+Initiating Ping Scan at 02:14
+Scanning 10.10.11.42 [2 ports]
+Completed Ping Scan at 02:14, 0.01s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 02:14
+Completed Parallel DNS resolution of 1 host. at 02:14, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 02:14
+Scanning 10.10.11.42 [65535 ports]
+Discovered open port 80/tcp on 10.10.11.42
+Discovered open port 22/tcp on 10.10.11.42
+Connect Scan Timing: About 8.43% done; ETC: 02:20 (0:05:37 remaining)
+Connect Scan Timing: About 16.48% done; ETC: 02:20 (0:05:09 remaining)
+Connect Scan Timing: About 24.82% done; ETC: 02:20 (0:04:36 remaining)
+Connect Scan Timing: About 32.97% done; ETC: 02:20 (0:04:06 remaining)
+Connect Scan Timing: About 41.10% done; ETC: 02:20 (0:03:36 remaining)
+Connect Scan Timing: About 48.36% done; ETC: 02:20 (0:03:13 remaining)
+Connect Scan Timing: About 56.45% done; ETC: 02:20 (0:02:43 remaining)
+Connect Scan Timing: About 63.91% done; ETC: 02:20 (0:02:16 remaining)
+Connect Scan Timing: About 71.28% done; ETC: 02:20 (0:01:49 remaining)
+Connect Scan Timing: About 78.98% done; ETC: 02:20 (0:01:20 remaining)
+Connect Scan Timing: About 86.27% done; ETC: 02:21 (0:00:53 remaining)
+Completed Connect Scan at 02:21, 386.25s elapsed (65535 total ports)
+Initiating Service scan at 02:21
+Scanning 2 services on 10.10.11.42
+Completed Service scan at 02:21, 6.18s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.11.42.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.46s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.03s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.00s elapsed
+Nmap scan report for 10.10.11.42
+Host is up, received syn-ack (0.013s latency).
+Scanned at 2021-03-17 02:14:36 CET for 393s
+Not shown: 65533 closed ports
+Reason: 65533 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.3p1 Ubuntu 1ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 9a:17:f5:b0:55:a3:11:97:00:75:a6:92:62:51:13:fd (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDKS0Ki9G0FwI452H6zfguUkWn+o05ajXJU3Lggwx8DshKRKrgoC5STVAdeN+zac15QNT2ruozueL8lrE2A4IbtU7thJ7BDkiiCy3jN/tihU/tqiMJNlCmAssIHI8VPG9P2W7QaPGjLhRJXPsKsMqDjkPIgzSqWjrS7MRw9++VupnsGkEpfdFzVaQzjQQpOYeP9kJ37j4yz9l6lEZ/2FeLQphZxao8MPkbbNSjkwtYACesfOx8wTlKUeIoHCWsrmSrEch9/AA/bB6M+HN2gB/TI+QuYxAv5R9qETivFyqoFYxLk2XaiCF8fcVIhg2qDOnkUzPSoCUx0DDEuSguPdOP9U3NwSOxhkdhRMAA+jmWWhy1/6YQ7qekzMnQf2fd3iwXgyDQZE3IUpe6nC86t+cEAyZispknEYmJ3DBAOAkThfibIQaKmgN5sIs9qR+iQQjFcEZnxIrrv2fl+8qTtdMUYvtglLADnz2G1173cYgrruqIOZCavRrUrhQ6m60bxq90=
+|   256 94:fe:12:2b:cf:a1:89:c5:a8:24:88:90:06:f3:1a:1a (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNDwPke3atqkr7mfZeQ3sXztYdgAzYdYVrq+fNy6zYbVrxRyjbDjuoT9Xk4Gn8+fubw5p6JEckB95S8ko3ptoSE=
+|   256 3e:91:36:d7:c0:88:3e:f9:ef:13:9a:dc:51:b8:4b:cd (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDcMWIRBQGTSYnjP9lpvWZbqh2cW6PfQC/ZpL7HIjajy
+80/tcp open  http    syn-ack nginx 1.18.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+|_http-title: Welcome to nginx!
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 02:21
+Completed NSE at 02:21, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 393.29 seconds

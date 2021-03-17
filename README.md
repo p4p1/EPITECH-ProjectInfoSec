@@ -19,6 +19,9 @@ The company is called powerzio
 10.10.11.123 - lewis-ubuntu.powerzio.lan
 10.10.11.143 - bdd.powerzio.lan
 10.10.11.222 - blog.powerzio.lan
+
+PIVOT FROM workstation1102
+10.10.11.42 - bouvet-ubuntu.powerzio.lan
 ```
 
 ## Usefull links
