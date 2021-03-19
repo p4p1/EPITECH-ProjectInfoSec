@@ -6,14 +6,14 @@
 # Description:
 import redis
 
-def password(name):
+def password(id):
     index = 0
     string = []
-    while index < len(name):
-        if name[index] == ')':
+    while index < len(id):
+        if id[index] == ')':
             string.append("A")
         else:
-            string.append(chr(ord(name[index]) - 9))
+            string.append(chr(ord(id[index]) - 9))
         index += 1
     return "".join(string)
 
@@ -24,5 +24,6 @@ pair = []
 print("user_id,name,password")
 for key in keys:
     name = r.get(key).decode("utf-8")
-    print(key.decode("utf-8") + "," + name + "," + password(name))
+    id = key.decode("utf-8")
+    print(id + "," + name + "," + password(id))
 
