@@ -1,0 +1,5 @@
+ 1 apt-get update && apt-get upgrade
+ 2 whoami
+ 3 pmanager
+ 4 killall firefox
+ 5 curl http://10.10.11.6

@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Thermostat 007 - Control Panel</title>
+        <style>
+            body {
+                background-color: yellow;
+                font-family: monospace;
+            }
+            .bullet.ok {
+                background-color: greenyellow;
+                height: 2rem;
+                margin-bottom: 1rem;
+            }
+            .bullet.danger {
+                background-color: red;
+                height: 2rem;
+                margin-bottom: 1rem;
+            }
+            .container {
+                margin: 3px;
+                border: 3px solid gray;
+                height: 640px;
+                width: 900px;
+            }
+            .temperature {
+                margin: 30px;
+                font-size: 2rem;
+            }
+            .interval {
+                margin-left: 2rem;
+                font-size: 1.5rem;
+            }
+            #temp {
+                font-size: 8rem;
+                color: red;
+            }
+            h1 {
+                margin-left: 2rem;
+                width: 80%;
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+    <script type="text/javascript">
+    function http(method, url, data) {
+        return new Promise((resolve, reject) => {
+            let request = new XMLHttpRequest();
+            request.onload = resolve;
+            request.onerror = reject;
+            request.open(method, url, true);
+            method === 'POST' ? request.send(data) : request.send()
+        })
+    }
+
+    function updateTemp() {
+        http('GET', '/api/temp')
+            .then((event) => {
+                let temp = event.target.response;
+                console.log("Temperature is "+temp);
+                document.querySelector('#temp').innerHTML = temp+'°C';
+                document.querySelector('#temp-details').innerHTML = `Temperature is ${temp}°C at ${new Date()}`;
+                document.querySelector('#update-interval').value = 2;
+            })
+            .catch(e => console.error(e));
+    }
+
+    window.onload = () => {
+        updateTemp();
+        window.interval = setInterval(() => updateTemp(), 2000);
+    }
+    </script>
+    <body>
+        <div class="container">
+            <h1>
+                Thermostat 7 - Reactor Pool
+                <button disabled class="bullet ok">
+                    Status ON
+                </button>
+                <button disabled class="bullet danger">
+                    Manual Control OFF 
+                </button>
+            </h1>
+            <div class="temperature">
+                <span id="temp">0°C</span>
+                <p id="temp-details">Temperature is %s at %s</p>
+            </div>
+            <div class="interval">
+                <form action="/api/config" method="POST">
+
+                <label>
+                    Update Interval :
+                </label><input id="update-interval" name="interval" type="number"/>
+                <button>UPDATE</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

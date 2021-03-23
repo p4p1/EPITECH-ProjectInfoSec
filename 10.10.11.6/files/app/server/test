@@ -1,0 +1,13 @@
+total 96
+drwxr-xr-x   1 root root  4096 Mar 23 17:40 .
+drwxr-xr-x   1 root root  4096 Mar 13 19:43 ..
+-rw-r--r--   1 root root    41 Mar  9 09:59 .env
+-rw-r--r--   1 root root  8192 Mar  9 09:59 data.sqlite
+-rw-r--r--   1 root root  3091 Mar 12 08:09 index.html
+-rw-r--r--   1 root root  2486 Mar 13 19:43 index.js
+drwxr-xr-x 122 root root  4096 Mar 13 19:43 node_modules
+-rw-r--r--   1 root root 44222 Mar  9 09:59 package-lock.json
+-rw-r--r--   1 root root   381 Mar  9 09:59 package.json
+-rwxr-xr-x   1 root root    80 Mar  9 09:59 readTemp.sh
+-rw-r--r--   1 root root   120 Mar  9 09:59 run_docker.sh
+-rw-r--r--   1 root root     0 Mar 23 17:41 test
