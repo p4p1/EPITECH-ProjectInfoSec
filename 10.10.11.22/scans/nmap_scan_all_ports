@@ -47,7 +47,7 @@ PORT   STATE SERVICE REASON  VERSION
 | http-robots.txt: 1 disallowed entry 
 |_/wp-admin/
 |_http-server-header: Apache/2.4.38 (Debian)
-|_http-title: Powerzio&#039;s Blog &#8211; Internal News and Updates
+|_http-title: redaced&#039;s Blog &#8211; Internal News and Updates
 
 NSE: Script Post-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
